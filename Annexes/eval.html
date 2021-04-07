@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="Eval.css">
+</head>
+<body>
+    <div class="container">
+        <div id="accueilDropdown">
+            <div id="accueil">
+            <h1>Bienvenue à bord</h1>
+            <p class="">Location de voiture 24H/24 et 7J/7</p>
+            </div>
+        <div class="dropdown">
+            <button class="dropbtn" type="button">Menu</button>
+            <div class="dropdown-content">
+              <a href="#">louer une voiture</a>
+              <a href="#">louer un utilitaire</a>
+              <a href="#">réserver un chauffeur</a>
+              <a href="#">découvrir nos agences</a>
+              <a href="#">Mon Compte</a>
+              <a href="#">Contact</a>
+            </div>
+        </div>
+      </div>
+
+        <header id="imgHeader">
+            <div class="navbar">
+                 <menu class="menu">
+                    <select name="adresse" id="option">
+                      <option value="1"> Choisir une adresse</option>
+                      <option value="2"> IDF</option>
+                      <option value="3"> PACA</option>
+                      <option value="4"> NORD</option>
+                      <option value="5"> BRETAGNE</option>
+                  </select>
+                 </menu>
+                 <menu class="menu">
+                    <input type="text" placeholder="début de location">
+                    <button class="navbar-toggler" type="button">
+                        <svg class="calendar" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="calendar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="Blue" d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg>
+                    </button> 
+                 </menu>
+                 <menu class="menu">
+                    <input type="text" placeholder="Fin de location" >
+                    <button class="navbar-toggler" type="button" >  <svg class="calendar" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="calendar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="Blue" d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg>                   
+                    </button> 
+                 </menu>
+                 <MENU class="menu">
+                     <button id="confirm">
+                         Valider ma recherche
+                     </button>
+                 </MENU>
+             </div>
+        </header>
+    </div>
+
+        <div class="content">
+            <div id="variables">
+            <span id="count">0</span>Résultats
+            <select class="price-sorting type-regular" name="price-sorting">
+                <option selected disabled>Default</option>
+                <option value="l2h">Croissant</option>
+                <option value="h2l">Décroissant</option>
+            </select>
+            </div>
+            <div class="products-grid">
+            <div class="card" style="width: 50vh; height: 50vh">
+                <img src="vehicule1.png" class="card-img" alt="Peugeot 208">
+                <div class="card-body">
+                  <h5 class="card-title">Peugeot 208</h5>
+                  <p class="card-text">Diesel, 5 portes, GPS, Autoradio, Forfait 1000km (0,5/km supplémentaire)</p>
+                  <p > <span class="price">999</span> €</p>
+                  <a href="#" class="btn btn-primary">Réservez et payer</a>
+                </div>
+            </div>
+              <div class="card" style="width: 50vh; height: 50vh">
+                <img src="vehicule2.png" class="card-img" alt="Peugeot 208">
+                <div class="card-body">
+                  <h5 class="card-title">Ford Focus</h5>
+                  <p class="card-text">Diesel, 5 portes, GPS, Autoradio, Forfait 1000km (0,5/km supplémentaire)</p>
+                  <p > <span class="price">999</span> €</p>
+                  <a href="#" class="btn btn-primary">Réservez et payer</a>
+                </div>
+              </div>
+              <div class="card" style="width: 50vh; height: 50vh">
+                <img src="vehicule3.png" class="card-img" alt="Peugeot 208">
+                <div class="card-body">
+                  <h5 class="card-title">Audi A1</h5>
+                  <p class="card-text">Diesel, 5 portes, GPS, Autoradio, Forfait 1000km (0,5/km supplémentaire)</p>
+                  <p > <span class="price">1100</span> €</p>
+                  <a href="#" class="btn btn-primary">Réservez et payer</a>
+                </div>
+              </div>
+              <div class="card" style="width: 50vh; height: 50vh">
+                <img src="vehicule4.png" class="card-img" alt="Peugeot 208">
+                <div class="card-body">
+                  <h5 class="card-title">Opel Mokka</h5>
+                  <p class="card-text">Diesel, 5 portes, GPS, Autoradio, Forfait 1000km (0,5/km supplémentaire)</p>
+                  <p > <span class="price">1150</span> €</p>
+                  <a href="#" class="btn btn-primary">Réservez et payer</a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <footer>
+            <div >
+                <img id="imgFoot" src="agence.jpg" alt="Notre Agence">
+            </div>
+            <div id="footText">
+                <p class="tFoot">Notre Agence de Paris</p>
+                <p class="tFoot">300, blvd de Vaugirard, 75015, Paris</p>
+                <p class="tFoot">Ouvert 7j/7 de 9h à 13h et de 14h à 20h</p>
+                <p class="tFoot">01 49 78 21 33</p>
+                <p class="tFoot">contact@vtc.com</p>
+            </div>
+        </footer>
+        
+        
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="eval.js"></script>
+</body>
+</html>
